@@ -2,15 +2,15 @@
 "use client";
 import React, { useState } from "react";
 
-const ContactFormWithInfo : React.FC = () => {
+const ContactFormWithInfo = () => {
   const [userData, setUserData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: "" as string,
+    message: "",
   });
 
-  const postUserData = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const postUserData = (event) => {
     const name = event.target.name;
     const value = event.target.value;
 
@@ -18,7 +18,7 @@ const ContactFormWithInfo : React.FC = () => {
   };
 
   // Connect with Firebase
-  const submitData = async (event: React.MouseEvent<HTMLButtonElement>) => {
+  const submitData = async (event) => {
     event.preventDefault();
     const { name, email, phone, message } = userData;
 
@@ -195,9 +195,10 @@ const ContactFormWithInfo : React.FC = () => {
                 <div className="mb-6">
                   <textarea
                     type="text"
+                    rows="6"
                     name="message"
                     placeholder="Enter Your Message"
-                    value={userData.message as string}
+                    value={userData.message}
                     onChange={postUserData}
                     className="border-stroke text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none text-black"
                   ></textarea>
