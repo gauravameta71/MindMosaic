@@ -2,7 +2,7 @@
 "use client";
 import React, { useState } from "react";
 
-const ContactFormWithInfo = () => {
+const ContactFormWithInfo : React.FC = () => {
   const [userData, setUserData] = useState({
     name: "",
     email: "",
@@ -10,39 +10,43 @@ const ContactFormWithInfo = () => {
     message: "",
   });
 
-  const postUserData = (event) => {
+  const postUserData = (event: React.ChangeEvent<HTMLInputElement>) => {
     const name = event.target.name;
     const value = event.target.value;
 
     setUserData({ ...userData, [name]: value });
   };
 
-
   // Connect with Firebase
-  const submitData = async (event) => {
+  const submitData = async (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     const { name, email, phone, message } = userData;
 
     if (name && email && phone && message) {
-      const res = await fetch(
-        "https://mindmosaic-221c5-default-rtdb.firebaseio.com/userDataRecords.json",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ name, email, phone, message }),
-        }
-      );
+      try {
+        const res = await fetch(
+          "https://mindmosaic-221c5-default-rtdb.firebaseio.com/userDataRecords.json",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name, email, phone, message }),
+          }
+        );
 
-      if (res.ok) {
-        setUserData({ name: "", email: "", phone: "", message: "" });
-        alert("Submitted Successfully.");
-      } else {
-        alert("Failed to submit. Please try again.");
+        if (res.ok) {
+          setUserData({ name: "", email: "", phone: "", message: "" });
+          alert("Submitted Successfully.");
+        } else {
+          alert("Failed to submit. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error submitting data:", error);
+        alert("An error occurred. Please try again later.");
       }
     } else {
-      alert("Fill all the required data.");
+      alert("Fill in all the required data.");
     }
   };
 
