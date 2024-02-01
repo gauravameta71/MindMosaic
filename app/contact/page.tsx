@@ -7,7 +7,7 @@ const ContactFormWithInfo : React.FC = () => {
     name: "",
     email: "",
     phone: "",
-    message: "",
+    message: "" as string,
   });
 
   const postUserData = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -197,7 +197,7 @@ const ContactFormWithInfo : React.FC = () => {
                     rows="6"
                     name="message"
                     placeholder="Enter Your Message"
-                    value={userData.message}
+                    value={userData.message as string}
                     onChange={postUserData}
                     className="border-stroke text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none text-black"
                   ></textarea>
