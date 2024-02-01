@@ -194,7 +194,7 @@ const ContactFormWithInfo : React.FC = () => {
                 </div>
                 <div className="mb-6">
                   <textarea
-                    rows="6"
+                    type="text"
                     name="message"
                     placeholder="Enter Your Message"
                     value={userData.message as string}
