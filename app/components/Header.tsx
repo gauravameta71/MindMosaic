@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
   const [isClick, setisClick] = useState(false);
-  const navRef = useRef(null);
+   const navRef = useRef<HTMLDivElement>(null);
 
 useEffect(() => {
   const handleClickOutside = (event: MouseEvent) => {
