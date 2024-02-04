@@ -29,7 +29,7 @@ const page = () => {
                     {/* <!-- Form Group --> */}
                     <div>
                       <label
-                        for="email"
+                        htmlFor="email"
                         className="block text-sm mb-2 text-black "
                       >
                         Email address
