@@ -1,7 +1,7 @@
 // components/Hero.js
 "use client";
 import React, { useEffect } from "react";
-import Link from "next/link";
+
 
 
 const Hero = () => {

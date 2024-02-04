@@ -11,7 +11,7 @@ const Privacy = () => {
 
       <section className="mb-4 bg-gray-200">
         <h2 className="text-lg font-bold mb-2 text-black bg-gray-200">
-          Assignment In Need provides an option of cancellation of any of the
+          MindMosaic provides an option of cancellation of any of the
           orders as now and then students have to drop the idea of taking the
           help of external sources due to some reasons. We do cancel the order
           by following conditions given below:

@@ -1,19 +1,34 @@
 "use client";
-import React, { useState,useRef } from "react";
+import React, { useState,useRef,useEffect } from "react";
 import Link from "next/link";
 
 const Header = () => {
   const [isClick, setisClick] = useState(false);
+  const navRef = useRef(null);
+
+useEffect(() => {
+  const handleClickOutside = (event: MouseEvent) => {
+    if (navRef.current && !navRef.current.contains(event.target as Node)) {
+      setisClick(false);
+    }
+  };
+
+  // Attach the event listener
+  document.addEventListener("mousedown", handleClickOutside);
+
+  // Cleanup the event listener on component unmount
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [navRef]);
 
   const toggleNavbar = (): void => {
     setisClick(!isClick);
-
-    
   };
 
   return (
     <>
-      <nav className="bg-white">
+      <nav className="bg-white" ref={navRef}>
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -54,6 +69,12 @@ const Header = () => {
                   </div>
                 </div>
                 <Link
+                  href="/sample"
+                  className="text-black hover:text-gray-500 font-bold rounded-lg p-2"
+                >
+                  Sample
+                </Link>
+                <Link
                   href="/pricing"
                   className="text-black hover:text-gray-500 font-bold rounded-lg p-2"
                 >
@@ -66,17 +87,17 @@ const Header = () => {
                 >
                   Contact
                 </Link>
-                <Link href="/login">
+                <Link href="/signin">
                   <button className="text-white bg-blue-600 hover:bg-blue-800 font-semibold rounded-lg p-2 m-2 sm:text-xs md:text-sm lg:text-md">
-                    Sign Up
+                    LogIn
                   </button>
                 </Link>
               </div>
             </div>
             <div className="md:hidden flex items-center">
-              <Link href="/login">
+              <Link href="/signin">
                 <button className="text-white bg-blue-600 hover:bg-blue-800 font-semibold rounded-lg p-1.5 m-2 sm:text-xs md:text-sm lg:text-md">
-                  Sign Up
+                  LogIn
                 </button>
               </Link>
               <button
@@ -138,7 +159,7 @@ const Header = () => {
                 </div>
                 <div className="dropdown1">
                   <button className="dropbtn1">Services</button>
-                  <div className="dropdown-content1">
+                  <div className="dropdown-content1 ">
                     <a href="/assignment_page">Assignment Writing</a>
                     <a href="/assignment_page1">Dissertation Writing</a>
                     <a href="/assignment_page2">Technical Assignment</a>
@@ -148,8 +169,16 @@ const Header = () => {
                   </div>
                 </div>
                 {/*  */}
+
                 <a
-                  href="/book"
+                  href="/sample"
+                  className="text-black block hover:text-gray-400 font-bold rounded-lg p-2"
+                >
+                  Sample
+                </a>
+
+                <a
+                  href="/pricing"
                   className="text-black block hover:text-gray-400 font-bold rounded-lg p-2"
                 >
                   Pricing
