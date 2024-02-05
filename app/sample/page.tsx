@@ -172,6 +172,26 @@ const Card = () => (
           </div>
         </div>
       </div>
+      {/* card 8 */}
+      <div className="max-w-xs mx-auto p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+        <div className="bg-white shadow-md rounded-md overflow-hidden">
+          <img
+            src="/assets/hospitality.jpg"
+            alt="card1"
+            className="w-full h-32 object-cover"
+          />
+          <div className="p-4">
+            <h2 className="text-sm font-semibold mb-2 text-black">
+              HOSPITALITY MANAGEMENT ASSIGNMENT <br /> <br /> <span> </span>
+            </h2>
+            <Link href="/hospitality">
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
+                Read More
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   </>
 );

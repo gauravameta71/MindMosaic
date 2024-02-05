@@ -65,7 +65,7 @@ useEffect(() => {
                     <a href="/assignment_page2">Technical Assignment</a>
                     <a href="/assignment_page3">Essay Writing</a>
                     <a href="/assignment_page4">Research Paper Writing</a>
-                    <a href="/assignment_page5">Home Writing</a>
+                    {/* <a href="/assignment_page5">Home Writing</a> */}
                   </div>
                 </div>
                 <Link
@@ -165,7 +165,7 @@ useEffect(() => {
                     <a href="/assignment_page2">Technical Assignment</a>
                     <a href="/assignment_page3">Essay Writing</a>
                     <a href="/assignment_page4">Research Paper Writing</a>
-                    <a href="/assignment_page5">Home Writing</a>
+                    {/* <a href="/assignment_page5">Home Writing</a> */}
                   </div>
                 </div>
                 {/*  */}

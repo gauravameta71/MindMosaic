@@ -4,7 +4,7 @@ import React from "react";
 
 const Privacy = () => {
   return (
-    <div className=" mb-8  mx-auto mt-8 p-16 lg:ml-32 lg:mr-32 sm:ml-8 sm:mr-8 ml-8 mr-8 bg-gray-200 shadow-lg rounded-lg">
+    <div className=" mb-8  mx-auto mt-8 p-4 lg:ml-32 lg:mr-32 sm:ml-8 sm:mr-8 ml-8 mr-8 bg-gray-200 shadow-lg rounded-lg">
       <h1 className="text-2xl font-bold mb-4 text-black bg-gray-200">
         Our Cancellation Policy - MindMosaic
       </h1>

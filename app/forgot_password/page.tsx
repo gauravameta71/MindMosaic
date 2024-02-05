@@ -29,7 +29,7 @@ const page = () => {
                     {/* <!-- Form Group --> */}
                     <div>
                       <label
-                        htmlFor="email"
+                        htmlFor="someInput"
                         className="block text-sm mb-2 text-black "
                       >
                         Email address
@@ -37,7 +37,7 @@ const page = () => {
                       <div className="relative">
                         <input
                           type="email"
-                          id="email"
+                          id="someInput"
                           name="email"
                           className="py-3 px-4 block w-full border border-gray-500 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
                           required
