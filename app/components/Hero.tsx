@@ -32,13 +32,13 @@ const Hero = () => {
       <div
         className="wrap text-white h-screen flex flex-col items-center justify-center px-4 bg-cover"
         style={{
-          backgroundImage: `url('/assets/bg.jpg') `, // Adjust the path based on your project structure
+          backgroundImage: `url('/assets/bgg.jpg') `, // Adjust the path based on your project structure
         }}
       >
         <h1 className="gradient-text text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-center text-white font-bold mb-4 pt-4">
           From Stress to Success: Your Assignment Ally
         </h1>
-        <h3 className=" bg-transparent mb-2 text-base sm:text-lg lg:text-xl xl:text-2xl font-semibold text-center text-black ">
+        <h3 className=" bg-transparent mb-2 text-base sm:text-lg lg:text-xl xl:text-2xl font-semibold text-center text-white ">
           {/* Count on our team of seasoned experts, dedicated to providing
           steadfast support, ensuring your assignment journey culminates in
           triumph. Your success is our commitment. */}
