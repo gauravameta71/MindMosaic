@@ -43,12 +43,12 @@ const Footer = () => {
                       alt="mail"
                       className="w-[16px] h-[14px] mr-2"
                     />
-                    <p>Nikhil@mindmosaic.in</p>
+                    <p>nick@themindmosaic.com</p>
                   </h1>
 
                   {/* 3 */}
                   <Link
-                    href="https://wa.me/message/BYQFHKZKZJUDI1"
+                    href="https://wa.me/message/LBGOR7HIIXZPO1"
                     className="flex items-center text-sm  hover:text-gray-300 text-black font-semibold"
                   >
                     <img
@@ -56,7 +56,7 @@ const Footer = () => {
                       alt="mail"
                       className="w-[16px] h-[14px] mr-2"
                     />
-                    <p>+447584636411</p>
+                    <p>+44 330-828-5951</p>
                   </Link>
                   {/* 3 */}
                 </div>
@@ -165,40 +165,16 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="https://wa.me/message/BYQFHKZKZJUDI1"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-red-600"
-              >
-                <img
-                  src="/assets/facebook.png"
-                  alt="facebook"
-                  className=" w-[28px] h-[27px] flex mt-[-12px]"
-                />
-
-                <span className="sr-only">Facebook</span>
-              </Link>
-
-              <Link
-                href="https://wa.me/message/BYQFHKZKZJUDI1"
+                href="https://wa.me/message/LBGOR7HIIXZPO1"
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-red-600"
               >
                 <img
                   src="/assets/whatsapp.png"
-                  alt="facebook"
+                  alt="whatsapp"
                   className=" w-[28px] h-[27px] flex mt-[-12px]"
                 />
                 <span className="sr-only">Whatsapp</span>
               </Link>
-              {/* <Link
-                href="https://wa.me/message/BYQFHKZKZJUDI1"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-red-600"
-              >
-                <img
-                  src="/assets/linkedin.png"
-                  alt="facebook"
-                  className=" w-[28px] h-[27px] flex mt-[-12px]"
-                />
-                <span className="sr-only">LinkedIn</span>
-              </Link> */}
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ const TutorialRequestPage = () => {
       </p>
       <button>
         <Link
-          href="https://www.instagram.com/mindmosaic.mm?igsh=MWphbzVnZ2FrN2IybA=="
+          href="https://wa.me/message/LBGOR7HIIXZPO1"
           className="bg-blue-600 text-white px-6 py-3 rounded-md text-bold m-4"
         >
           Request Tutorial
