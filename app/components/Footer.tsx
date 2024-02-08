@@ -43,7 +43,7 @@ const Footer = () => {
                       alt="mail"
                       className="w-[16px] h-[14px] mr-2"
                     />
-                    <p>nick@themindmosaic.com</p>
+                    <p>nick@themindmosaic <span>.com</span></p>
                   </h1>
 
                   {/* 3 */}

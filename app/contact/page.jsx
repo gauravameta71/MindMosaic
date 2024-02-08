@@ -129,7 +129,7 @@ const ContactFormWithInfo = () => {
                     Whatsapp Number
                   </h4>
                   <p className="text-base text-body-color text-black">
-                    +447584636411
+                    +44 330-828-5951
                   </p>
                 </div>
               </div>
@@ -153,7 +153,7 @@ const ContactFormWithInfo = () => {
                     Email Address
                   </h4>
                   <p className="text-base text-body-color text-black">
-                    Nikhil@mindmosaic.com
+                    nick@themindmosaic.com
                   </p>
                 </div>
               </div>
