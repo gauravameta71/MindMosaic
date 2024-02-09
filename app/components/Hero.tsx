@@ -12,7 +12,7 @@ const Hero = () => {
       if (container) {
         const words = container.innerText.split(" ");
         const totalSpace = container.offsetWidth - container.scrollWidth;
-        const spacePerWord = totalSpace / (words.length + words.length / 4); // Adjust the denominator to control word spacing
+        const spacePerWord = totalSpace / (words.length + words.length / 4); 
         container.style.wordSpacing = `${spacePerWord}px`;
       }
     };

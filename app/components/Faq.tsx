@@ -103,7 +103,7 @@ const page = () => {
                   </span>
                 </summary>
                 <p className="text-neutral-400 mt-3 group-open:animate-fadeIn">
-                  Yes, all assignments from Assignment In Need are
+                  Yes, all assignments from MindMosaic are
                   custom-written, unique, and rigorously checked for plagiarism
                   to ensure originality.
                 </p>
@@ -280,7 +280,7 @@ const page = () => {
                 </summary>
                 <p className="text-neutral-400 mt-3 group-open:animate-fadeIn">
                   Requesting a revision is easy. Once you receive your completed
-                  assignment from Assignment In Need, review it carefully. If
+                  assignment from MindMosaic, review it carefully. If
                   you need any changes or revisions, simply log in to your
                   account, go to the order page, and click the "Request
                   Revision" button. Provide clear instructions regarding the
