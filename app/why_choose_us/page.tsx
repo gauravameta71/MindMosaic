@@ -38,32 +38,30 @@ const WhoWeAre = () => {
           </div>
         </div>
       </div>
-      <div
-        className="bg-gray-100 p-4 bg-cover"
-     
-      >
+      <div className="bg-gray-100 p-4 bg-cover">
         <div className="flex flex-col md:flex-row gap-4 bg-transparent">
           {/* Card 1 */}
           <div
-            className="bg-white p-6 rounded-lg shadow-md flex-1 md:cover-fill bg-cover"
-            style={{ backgroundImage: "url(/assets/backg1.jpg)" }}
+            className="bg-white p-6 rounded-lg shadow-md flex-1 md:cover-fill bg-cover "
+            style={{ backgroundImage: "url(/assets/image.jpg)" }}
           >
             <h2 className="text-3xl md:text-3xl lg:text-3xl font-bold text-black bg-transparent pb-4">
               MindMosaic
             </h2>
 
-            <p className="text-base md:text-lg text-blue-900 font-semibold bg-transparent">
+            <p className=" md:text-lg text-black bg-transparent text-sm">
               At MindMosaic, we transcend the conventional boundaries of
               assignment services, offering a transformative academic
-              experience. Here's why students worldwide choose us :
+              experience. <br />
+              Here's why students worldwide choose us : <br />
               <span className="block md:inline text-black font-bold mt-2 md:mt-0 bg-transparent">
                 {" "}
                 Global Expertise :{" "}
-              </span>
+              </span>{" "}
               Our team comprises over 200 dedicated professionals, ensuring a
               wealth of knowledge and expertise in diverse academic disciplines.
               <span className="block md:inline text-black font-bold mt-2 md:mt-0 bg-transparent">
-                {" "}
+                <br /> <br />
                 Tailored Solutions :{" "}
               </span>
               MindMosaic specializes in crafting personalized assignments,
@@ -71,18 +69,19 @@ const WhoWeAre = () => {
               care.
               <span className="block md:inline text-black font-bold mt-2 md:mt-0 bg-transparent">
                 {" "}
+                <br /> <br />
                 Unparalleled Quality :{" "}
               </span>
               We go beyond essay writing, tackling technical assignments and
               programming projects with unwavering commitment and creativity.
               <span className="block md:inline text-black font-bold mt-2 md:mt-0 bg-transparent">
-                {" "}
+                <br /> <br />
                 Commitment to Excellence :{" "}
               </span>
               Our mission is to uphold the highest standards in assignment
               services, ensuring timely delivery and exceptional quality.
               <span className="block md:inline text-black font-bold mt-2 md:mt-0 bg-transparent">
-                {" "}
+                <br /> <br />
                 Local Presence, Global Impact :{" "}
               </span>
               Nestled in Bruche, England, our physical presence reflects a
@@ -90,13 +89,13 @@ const WhoWeAre = () => {
               influence extends globally, connecting with students from all
               corners of the world.
               <span className="block md:inline text-black font-bold mt-2 md:mt-0 bg-transparent">
-                {" "}
+                <br /> <br />
                 Responsive to Feedback :{" "}
               </span>
               We value customer feedback and actively implement suggestions to
               enhance our services continually.
               <span className="block md:inline text-black font-bold mt-2 md:mt-0 bg-transparent">
-                {" "}
+                <br /> <br />
                 Academic Partnership :{" "}
               </span>
               MindMosaic isn't just a service provider; we aim to be your

@@ -40,8 +40,8 @@ const WhoWeAre = () => {
       </div>
 
       <div
-        className="bg-gray-100 p-4 bg-cover"
-        style={{ backgroundImage: "url(/assets/wrw3.png)" }}
+        className="bg-gray-100 p-8 bg-cover "
+        // style={{ backgroundImage: "url(/assets/wrw3.png)" }}
       >
         <div className="flex flex-col md:flex-row gap-4 bg-transparent">
           {/* Card 1 */}

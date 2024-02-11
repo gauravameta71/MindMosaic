@@ -26,7 +26,7 @@ const OurGuarantee = () => {
           />
           <p className="text-sm text-black mt-1 bg-transparent p-2 m-2">Quality Work</p>
         </div>
-        {/* 2222 */}
+        
         <div className="flex flex-col items-center bg-transparent">
           <img
             src="/assets/timing.png"
@@ -73,7 +73,7 @@ const OurGuarantee = () => {
         <div className="flex flex-col items-center bg-transparent">
           {/* className="h-10 w-10 text-blue-500 bg-transparent" */}
           <img
-            src="/assets/assistance.png"
+            src="/assets/service.png"
             alt="work"
             className="max-w-full h-auto h-10 w-10 text-blue-500 bg-transparent"
           />
