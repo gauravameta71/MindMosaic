@@ -37,15 +37,16 @@ const Footer = () => {
                   </h1>
 
                   {/* 2 */}
-                  <h1 className="flex items-center text-sm text-black font-semibold">
+                  <h1 className="flex items-center text-sm hover:text-gray-300 text-black font-semibold">
                     <img
                       src="/assets/mail.png"
                       alt="mail"
                       className="w-[16px] h-[14px] mr-2"
                     />
                     <a href="mailto:nick@themindmosaic.com">
-                      {" "}
-                      nick@themindmosaic<span>.com</span>
+                      
+                      nick@themindmosaic{" "}
+                      <span>.com</span>
                     </a>
                   
                   </h1>
