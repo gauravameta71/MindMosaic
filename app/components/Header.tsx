@@ -54,18 +54,18 @@ useEffect(() => {
                 <div className="dropdown">
                   <button className="dropbtn">Company</button>
                   <div className="dropdown-content">
-                    <a href="/who_we_are" className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2">Who we are</a>
-                    <a href="/why_choose_us" className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2">Why Choose Us</a>
+                    <a href="/who_we_are" >Who we are</a>
+                    <a href="/why_choose_us" >Why Choose Us</a>
                   </div>
                 </div>
                 <div className="dropdown">
                   <button className="dropbtn">Services</button>
                   <div className="dropdown-content">
-                    <a href="/assignment_page" className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2">Assignment Writing</a>
-                    <a href="/assignment_page1" className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2">Dissertation Writing</a>
-                    <a href="/assignment_page2" className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2">Technical Assignment</a>
-                    <a href="/assignment_page3" className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2">Essay Writing</a>
-                    <a href="/assignment_page4" className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2">Research Paper Writing</a>
+                    <a href="/assignment_page" >Assignment Writing</a>
+                    <a href="/assignment_page1" >Dissertation Writing</a>
+                    <a href="/assignment_page2" >Technical Assignment</a>
+                    <a href="/assignment_page3" >Essay Writing</a>
+                    <a href="/assignment_page4" >Research Paper Writing</a>
                     {/* <a href="/assignment_page5">Home Writing</a> */}
                   </div>
                 </div>

@@ -41,7 +41,7 @@ const Footer = () => {
                     <img
                       src="/assets/mail.png"
                       alt="mail"
-                      className="w-[16px] h-[14px] mr-2"
+                      className="w-[16px] h-[14px] mr-2 text-sm"
                     />
                     <a href="mailto:nick@themindmosaic.com">
                       
