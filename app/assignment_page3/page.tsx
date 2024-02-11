@@ -35,39 +35,38 @@ const page = () => {
           className="max-w-full w-full sm:w-1/2 h-auto mb-4 sm:mb-0"
         />
         <div className="text-center sm:text-left sm:w-1/2 sm:pl-8">
-          <h1 className="text-2xl">Technical Assignment</h1>
+          <h1 className="text-2xl">Essay Writing</h1>
           <h1 className="text-4xl font-bold mb-4">What we Offer?</h1>
           <p
             className="text-lg text-gray-700 mb-8 leading-loose text-justify  pl-4 pr-4"
             id="line-equalizer-container"
           >
-            Embarking on technical assignments can be a daunting task, but fear
-            not—we offer a comprehensive "Technical Assignment" service tailored
-            to your needs. Our team of experts specializes in crafting web, app,
-            and programming projects with precision and efficiency. Whether
-            you're grappling with complex coding challenges or seeking
-            innovative solutions for your technical assignments, our seasoned
-            professionals are here to guide you. We delve deep into the
-            intricacies of each project, ensuring a meticulous understanding of
-            your requirements. From conceptualization to execution, our experts
-            bring a wealth of experience to the table. They meticulously plan
-            and strategize, ensuring that every line of code serves a purpose
-            and aligns with industry best practices. With a keen eye for detail,
-            our team ensures that your technical assignments not only meet but
-            exceed expectations. Collaborating with us means receiving top-notch
-            assistance throughout the development process. Be it a web
-            development task, mobile app creation, or programming project, our
-            experts employ the latest technologies and methodologies to deliver
-            results that showcase both innovation and proficiency.
+            Navigating through higher levels of education, the significance of
+            academic writing becomes increasingly crucial for students aiming at
+            top grades. However, not everyone possesses the innate ability to
+            craft flawless essays. Some struggle with language intricacies,
+            while others may find the essay-writing process daunting and
+            unclear. In such circumstances, our essay writing service in the UK
+            is here to provide valuable assistance. Our goal is to alleviate the
+            challenges you face during your academic journey. While numerous
+            services offer custom-written essays, not all can meet your specific
+            expectations. With our dedicated essay writing help tailored for the
+            UK audience, our writers strive to deliver outcomes that enhance
+            your likelihood of securing excellent grades. Trust us to guide you
+            through the intricacies of academic writing, ensuring your success
+            in every essay.
           </p>
           <p
             className="text-lg text-gray-700 mb-8 leading-loose text-justify  pl-4 pr-4"
             id="line-equalizer-container"
           >
-            Let us take the reins of your technical assignments, allowing you to
-            focus on grasping the core concepts rather than getting bogged down
-            by the intricacies of coding. We're here to turn your visions into
-            reality, one code at a time.
+            By choosing our essay writing service, you're investing in more than
+            just a paper – you're investing in your academic journey. Let us be
+            the support you need to navigate the complexities of essay writing
+            and elevate your academic performance. Join countless students who
+            have benefited from our expertise and experience the difference in
+            your grades with our essay writing help in the UK. Your success is
+            our priority.
           </p>
         </div>
       </div>
