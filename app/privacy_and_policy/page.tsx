@@ -100,11 +100,11 @@ const Privacy = () => {
         <h2 className="text-lg font-bold mb-2 text-black bg-gray-200">7. Contact Us</h2>
         <p className="text-black bg-gray-200">
           If you have any questions or concerns regarding our Privacy Policy,
-          please contact us at [contact@mindmosaic.com].
+          please contact us at nick@themindmosaic.com.
         </p>
       </section>
 
-      {/* Add more sections for different parts of your terms and conditions */}
+     
     </div>
   );
 };
