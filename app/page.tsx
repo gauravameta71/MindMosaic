@@ -6,6 +6,7 @@ import Hero3 from "./components/Hero3";
 import Hero4 from "./components/Hero4";
 import Faq from "./components/Faq";
 import Heroh from "./components/Heroh";
+import Testimonial from "./components/Testimonial";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
     <Hero2/>
     <Hero3/>
     <Hero4/>
+    <Testimonial/>
     <Faq/>
    </h1>
   );

@@ -28,8 +28,12 @@ useEffect(() => {
 
   return (
     <>
-      <nav className="bg-white" ref={navRef}>
-        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+      <nav
+        className="bg-white shadow-md"
+        style={{ boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)" }}
+        ref={navRef}
+      >
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 font-bold text-2xl text-center pb-2 sm:pb-0 text-blackish text-black pl-[-2rem]">
@@ -54,18 +58,18 @@ useEffect(() => {
                 <div className="dropdown">
                   <button className="dropbtn">Company</button>
                   <div className="dropdown-content">
-                    <a href="/who_we_are" >Who we are</a>
-                    <a href="/why_choose_us" >Why Choose Us</a>
+                    <a href="/who_we_are">Who we are</a>
+                    <a href="/why_choose_us">Why Choose Us</a>
                   </div>
                 </div>
                 <div className="dropdown">
                   <button className="dropbtn">Services</button>
                   <div className="dropdown-content">
-                    <a href="/assignment_page" >Assignment Writing</a>
-                    <a href="/assignment_page1" >Dissertation Writing</a>
-                    <a href="/assignment_page2" >Technical Assignment</a>
-                    <a href="/assignment_page3" >Essay Writing</a>
-                    <a href="/assignment_page4" >Research Paper Writing</a>
+                    <a href="/assignment_page">Assignment Writing</a>
+                    <a href="/assignment_page1">Dissertation Writing</a>
+                    <a href="/assignment_page2">Technical Assignment</a>
+                    <a href="/assignment_page3">Essay Writing</a>
+                    <a href="/assignment_page4">Research Paper Writing</a>
                     {/* <a href="/assignment_page5">Home Writing</a> */}
                   </div>
                 </div>
