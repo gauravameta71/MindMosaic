@@ -93,18 +93,13 @@ useEffect(() => {
                   Contact
                 </Link>
                 <Link href="/signin">
-                  <button className="text-white bg-blue-600 hover:bg-blue-800 font-semibold rounded-lg p-2 m-2 sm:text-xs md:text-sm lg:text-md">
+                  <button className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md">
                     LogIn
                   </button>
                 </Link>
               </div>
             </div>
             <div className="md:hidden flex items-center">
-              <Link href="/signin">
-                <button className="text-white bg-blue-600 hover:bg-blue-800 font-semibold rounded-lg p-1.5 m-2 sm:text-xs md:text-sm lg:text-md">
-                  LogIn
-                </button>
-              </Link>
               <button
                 className="inline-flex items-center justify-center p-2 rounded-md text-black   hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white "
                 onClick={toggleNavbar}
@@ -195,6 +190,11 @@ useEffect(() => {
                 >
                   Contact Us
                 </a>
+                <Link href="/signin">
+                  <button className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md">
+                    LogIn
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
