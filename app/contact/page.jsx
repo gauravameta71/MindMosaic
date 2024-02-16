@@ -53,7 +53,7 @@ const ContactFormWithInfo = () => {
 
   return (
     // <!-- ====== Contact Section Start -->
-    <section className="relative overflow-hidden bg-white py-20 lg:py-[120px] p-12">
+    <section className=" overflow-hidden bg-white py-20 lg:py-[120px] p-12">
       <div className="container mx-auto">
         <div className="flex flex-wrap -mx-4 lg:justify-between">
           <div className="w-full px-4 lg:w-1/2 xl:w-6/12">

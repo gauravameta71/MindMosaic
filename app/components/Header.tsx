@@ -48,12 +48,12 @@ useEffect(() => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-4">
-                <Link
+                <a
                   href="/"
                   className="text-black hover:text-gray-500 font-bold rounded-lg p-2"
                 >
                   Home
-                </Link>
+                </a>
 
                 <div className="dropdown">
                   <button className="dropbtn">Company</button>
@@ -73,30 +73,30 @@ useEffect(() => {
                     {/* <a href="/assignment_page5">Home Writing</a> */}
                   </div>
                 </div>
-                <Link
+                <a
                   href="/sample"
                   className="text-black hover:text-gray-500 font-bold rounded-lg p-2"
                 >
                   Sample
-                </Link>
-                <Link
+                </a>
+                <a
                   href="/pricing"
                   className="text-black hover:text-gray-500 font-bold rounded-lg p-2"
                 >
                   Pricing
-                </Link>
+                </a>
 
-                <Link
+                <a
                   href="/contact"
                   className="text-black hover:text-gray-500 font-bold rounded-lg p-2"
                 >
                   Contact
-                </Link>
-                <Link href="/signin">
+                </a>
+                <a href="/signin">
                   <button className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md">
                     LogIn
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="md:hidden flex items-center">
@@ -190,11 +190,11 @@ useEffect(() => {
                 >
                   Contact Us
                 </a>
-                <Link href="/signin">
+                <a href="/signin">
                   <button className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md">
                     LogIn
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
