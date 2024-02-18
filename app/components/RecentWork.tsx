@@ -4,7 +4,7 @@ const RecentWork = () => {
   return (
     <>
       <section className="py-10">
-        <h1 className="mb-12 text-center font-sans text-5xl font-bold text-black">
+        <h1 className="mb-12 text-center font-sans text-4xl font-bold text-black ">
           Our Recent Technical Work
         </h1>
         <div className="mx-auto grid max-w-screen-lg grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-3 lg:gap-10">
