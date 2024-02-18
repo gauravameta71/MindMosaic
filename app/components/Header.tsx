@@ -50,13 +50,13 @@ useEffect(() => {
               <div className="ml-4 flex items-center space-x-4">
                 <a
                   href="/"
-                  className="text-black hover:text-gray-500 font-bold rounded-lg p-2"
+                  className="text-black hover:text-gray-500 font-semibold rounded-lg p-2"
                 >
                   Home
                 </a>
 
-                <div className="dropdown">
-                  <button className="dropbtn">Company</button>
+                <div className="dropdown ">
+                  <button className="dropbtn ">Company</button>
                   <div className="dropdown-content">
                     <a href="/who_we_are">Who we are</a>
                     <a href="/why_choose_us">Why Choose Us</a>
@@ -70,25 +70,24 @@ useEffect(() => {
                     <a href="/assignment_page2">Technical Assignment</a>
                     <a href="/assignment_page3">Essay Writing</a>
                     <a href="/assignment_page4">Research Paper Writing</a>
-                    {/* <a href="/assignment_page5">Home Writing</a> */}
                   </div>
                 </div>
                 <a
                   href="/sample"
-                  className="text-black hover:text-gray-500 font-bold rounded-lg p-2"
+                  className="text-black hover:text-gray-500 font-semibold rounded-lg p-2"
                 >
                   Sample
                 </a>
                 <a
                   href="/pricing"
-                  className="text-black hover:text-gray-500 font-bold rounded-lg p-2"
+                  className="text-black hover:text-gray-500 font-semibold rounded-lg p-2"
                 >
                   Pricing
                 </a>
 
                 <a
                   href="/contact"
-                  className="text-black hover:text-gray-500 font-bold rounded-lg p-2"
+                  className="text-black hover:text-gray-500 font-semibold rounded-lg p-2"
                 >
                   Contact
                 </a>
@@ -145,7 +144,7 @@ useEffect(() => {
               <div className="px-2 pt-2 pb-0 space-y-1 sm:px-3 fixed w-full">
                 <a
                   href="/"
-                  className="text-black block hover:text-gray-400 font-bold rounded-lg p-2 "
+                  className="text-black block hover:text-gray-400 font-semibold rounded-lg p-2 "
                 >
                   Home
                 </a>
@@ -172,21 +171,21 @@ useEffect(() => {
 
                 <a
                   href="/sample"
-                  className="text-black block hover:text-gray-400 font-bold rounded-lg p-2"
+                  className="text-black block hover:text-gray-400 font-semibold rounded-lg p-2"
                 >
                   Sample
                 </a>
 
                 <a
                   href="/pricing"
-                  className="text-black block hover:text-gray-400 font-bold rounded-lg p-2"
+                  className="text-black block hover:text-gray-400 font-semibold rounded-lg p-2"
                 >
                   Pricing
                 </a>
 
                 <a
                   href="/contact"
-                  className="text-black block hover:text-gray-400 font-bold rounded-lg p-2"
+                  className="text-black block hover:text-gray-400 font-semibold rounded-lg p-2"
                 >
                   Contact Us
                 </a>
