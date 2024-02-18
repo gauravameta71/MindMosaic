@@ -7,6 +7,7 @@ const RecentWork = () => {
         <h1 className="mb-12 text-center font-sans text-4xl font-bold text-black ">
           Our Recent Technical Work
         </h1>
+        <hr className="h-2 bg-indigo-600 w-52 mx-auto mt-8" />
         <div className="mx-auto grid max-w-screen-lg grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-3 lg:gap-10">
           <article className="h-90 col-span-1 m-auto min-h-full  overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
             <div className="block h-full w-full">
