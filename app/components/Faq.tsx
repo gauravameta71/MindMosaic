@@ -6,8 +6,8 @@ const page = () => {
   return (
     <section className="flex items-center bg-stone-100 font-poppins bg-transparent ">
       <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
-        <div className="px-4 mb-10 md:text-center md:mb-20">
-          <h2 className="pb-2 text-2xl font-bold text-gray-800 md:text-4xl ">
+        <div className="px-4 mb-4 md:text-center ">
+          <h2 className="pb- text-2xl font-bold text-gray-800 md:text-4xl ">
             FAQ's
           </h2>
           <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">

@@ -7,6 +7,7 @@ import Hero4 from "./components/Hero4";
 import Faq from "./components/Faq";
 import Heroh from "./components/Heroh";
 import Testimonial from "./components/Testimonial";
+import RecentWork from "./components/RecentWork";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     <Hero2/>
     <Hero3/>
     <Hero4/>
+    <RecentWork/>
     <Testimonial/>
     <Faq/>
    </h1>
