@@ -3,33 +3,24 @@ import React from 'react'
 const testimonial = () => {
   return (
     <>
-      <section className="py-8 sm:py-16 lg:py-20">
+      <section className="py-4 sm:py-16 lg:py-16">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center">
             <div className="text-center">
-              <h2 className="mt-2 text-3xl font-bold text-black sm:text-4xl xl:text-5xl">
+              <h2 className=" text-2xl font-bold text-black sm:text-4xl xl:text-5xl">
                 Have a look at what our clients say
               </h2>
-              <hr className="h-2 bg-indigo-600 w-52 mx-auto mt-8" />
+              <hr className="h-2 bg-indigo-600 w-52 mx-auto mt-4" />
             </div>
 
-            {/* <div className="mt-8 text-center md:order-3 md:mt-16">
-              <a
-                href="#"
-                title=""
-                className="border-b-2 border-gray-900 pb-2 text-base font-bold leading-7 text-black transition-all duration-200 hover:border-indigo-600 hover:text-indigo-600 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-              >
-                {" "}
-                Read more reviews
-              </a>
-            </div> */}
+           
 
-            <div className="relative mt-4 md:order-2 md:mt-24">
+            <div className="relative mt-4 md:order-2 md:mt-20">
               <div className="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
                 <div className="mx-auto h-full w-full max-w-5xl rounded-3xl opacity-30 blur-lg filter"></div>
               </div>
 
-              <div className="relative mx-auto grid max-w-lg grid-cols-1 gap-6 md:max-w-none md:grid-cols-2 lg:gap-10">
+              <div className="relative mx-auto grid max-w-lg grid-cols-1 gap-4 md:max-w-none md:grid-cols-2">
                 <div className="relative flex flex-col overflow-hidden">
                   <svg
                     className="absolute top-6 text-4xl text-indigo-600"
@@ -49,7 +40,7 @@ const testimonial = () => {
                   <div className="flex flex-1 flex-col justify-between p-6 lg:py-8 lg:px-7">
                     <div className="flex-1">
                       <blockquote className="mt-8 flex-1">
-                        <p className="text-xl font-[600] leading-snug text-black">
+                        <p className="text-md font-semibold leading-snug text-black">
                           I was struggling with my marketing assignment, but the
                           help I received was exceptional! The expert not only
                           delivered a well-researched paper but also provided
@@ -59,7 +50,7 @@ const testimonial = () => {
                       </blockquote>
                     </div>
 
-                    <div className="mt-8 flex items-center tracking-wide">
+                    <div className="mt-4 flex items-center tracking-wide">
                       <p className="text-base font-bold text-black">Natasha</p>
                       <p className="ml-3 text-gray-700">- Marketing Student</p>
                     </div>
@@ -85,7 +76,7 @@ const testimonial = () => {
                   <div className="flex flex-1 flex-col justify-between p-6 lg:py-8 lg:px-7">
                     <div className="flex-1">
                       <blockquote className="mt-8 flex-1">
-                        <p className="text-xl font-[600] leading-snug text-black">
+                        <p className="text-md font-semibold leading-snug text-black">
                           As a computer science student, I often find coding
                           assignments challenging. The support I received was
                           fantastic. The code was clean, well-commented, and the
@@ -95,10 +86,10 @@ const testimonial = () => {
                       </blockquote>
                     </div>
 
-                    <div className="mt-8 flex items-center tracking-wide">
-                      <p className="text-base font-bold text-black">Sarah L.</p>
+                    <div className="mt-4 flex items-center tracking-wide">
+                      <p className="text-base font-bold text-black">Sarah</p>
                       <p className="ml-3 text-gray-700">
-                        - Computer Science Student
+                        - Computer Sci. Student
                       </p>
                     </div>
                   </div>
@@ -123,7 +114,7 @@ const testimonial = () => {
                   <div className="flex flex-1 flex-col justify-between p-6 lg:py-8 lg:px-7">
                     <div className="flex-1">
                       <blockquote className="mt-8 flex-1">
-                        <p className="text-xl font-[600] leading-snug text-black">
+                        <p className="text-md font-semibold leading-snug text-black">
                           As an aspiring researcher, I couldn't have asked for
                           better assistance than what I received from Assignment
                           Ace. Their attention to detail and expertise in
@@ -133,7 +124,7 @@ const testimonial = () => {
                       </blockquote>
                     </div>
 
-                    <div className="mt-8 flex items-center tracking-wide">
+                    <div className="mt-4 flex items-center tracking-wide">
                       <p className="text-base font-bold text-black">Emily</p>
                       <p className="ml-3 text-gray-700">
                         - Health Psychology Student
@@ -161,20 +152,19 @@ const testimonial = () => {
                   <div className="flex flex-1 flex-col justify-between p-6 lg:py-8 lg:px-7">
                     <div className="flex-1">
                       <blockquote className="mt-8 flex-1">
-                        <p className="text-xl font-[600] leading-snug text-black">
-                         Provided exceptional support for my
-                          web development project. Their team's knowledge and
-                          dedication ensured that my assignment was not only
-                          completed on time but also exceeded my expectations.
-                          Kudos to them!
+                        <p className="text-md font-semibold leading-snug text-black">
+                          Provided exceptional support for my web development
+                          project. Their team's knowledge and dedication ensured
+                          that my assignment was not only completed on time but
+                          also exceeded my expectations. Kudos to them!
                         </p>
                       </blockquote>
                     </div>
 
-                    <div className="mt-8 flex items-center tracking-wide">
+                    <div className="mt-4 flex items-center tracking-wide">
                       <p className="text-base font-bold text-black">Harleen</p>
-                      <p className="ml-3 text-gray-700">
-                        - Computer Science Student
+                      <p className="ml-3 text-gray-700 overflow-hidden">
+                        - Computer Sci. Student
                       </p>
                     </div>
                   </div>

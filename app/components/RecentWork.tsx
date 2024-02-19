@@ -3,8 +3,8 @@ import React from 'react'
 const RecentWork = () => {
   return (
     <>
-      <section className="py-10">
-        <h1 className="mb-12 text-center font-sans text-4xl font-bold text-black ">
+      {/* <section className="py-10 bg-white"> */}
+        <h1 className="mb-12 text-center font-sans text-4xl font-bold text-black bg-white">
           Our Recent Technical Work
         </h1>
         <hr className="h-2 bg-indigo-600 w-52 mx-auto mt-8" />
