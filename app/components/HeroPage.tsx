@@ -33,7 +33,7 @@ const TypewriterEffectSmoothDemo = () => {
         {/* <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
           Signup
         </button> */}
-        <div className="mt-8 mb-10 flex flex-col items-center justify-center divide-y divide-gray-300 sm:flex-row sm:divide-x sm:divide-y-0 md:mt-20">
+        <div className="mt-0 mb-10 flex flex-col items-center justify-center divide-y divide-gray-300 sm:flex-row sm:divide-x sm:divide-y-0 md:mt-20">
           <div className="flex max-w-xs space-x-2 px-4 py-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
