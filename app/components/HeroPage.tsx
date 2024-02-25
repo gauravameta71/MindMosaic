@@ -22,15 +22,18 @@ const TypewriterEffectSmoothDemo = () => {
   ];
   return (
     <div className="flex flex-col items-center justify-center h-[40rem] text-black">
-      <p className=" text-black text-[12px] font-semibold md:text-2xl ">
-        Beyond Assignments: We Deliver Excellence, Every Time
-      </p>
+      <div className="flex justify-center items-center w-full">
+        <p className=" text-black text-sm font-semibold md:text-2xl sm:text-xl ">
+          Beyond Assignments: We Deliver Excellence, Every Time
+        </p>
+      </div>
+      {/* <p className="flex justify-center textblack">helllo</p> */}
       <TypewriterEffectSmooth words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
         {/* <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
           Signup
         </button> */}
-        <div className="mt-16 mb-16 flex flex-col items-center justify-center divide-y divide-gray-300 sm:flex-row sm:divide-x sm:divide-y-0 md:mt-20">
+        <div className="mt-8 mb-10 flex flex-col items-center justify-center divide-y divide-gray-300 sm:flex-row sm:divide-x sm:divide-y-0 md:mt-20">
           <div className="flex max-w-xs space-x-2 px-4 py-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
