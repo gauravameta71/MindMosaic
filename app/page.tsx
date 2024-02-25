@@ -15,8 +15,8 @@ import HeroPage from "./components/HeroPage";
 export default function Home() {
   return (
    <h1>
-   <HeroPage/>
-   {/* <Heroh/> */}
+   {/* <HeroPage/> */}
+   <Heroh/>
     <Hero/>
     <Hero2/>
     <Hero3/>
