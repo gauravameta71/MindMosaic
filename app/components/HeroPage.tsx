@@ -22,8 +22,8 @@ const TypewriterEffectSmoothDemo = () => {
   ];
   return (
     <div className="flex flex-col items-center justify-center h-[40rem] text-black">
-      <div className="flex justify-center items-center w-full">
-        <p className=" text-black text-sm font-semibold md:text-2xl sm:text-xl ">
+      <div className="flex justify-center w-full ">
+        <p className=" text-black lg:text-lg font-semibold md:text-2xl text-xs">
           Beyond Assignments: We Deliver Excellence, Every Time
         </p>
       </div>
