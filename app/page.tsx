@@ -8,12 +8,14 @@ import Faq from "./components/Faq";
 import Heroh from "./components/Heroh";
 import Testimonial from "./components/Testimonial";
 import Rating from "./components/Rating";
+import ScrollMain from "./components/ScrollMain";
 
 
 export default function Home() {
   return (
    <h1>
-   <Heroh/>
+    <ScrollMain/>
+   {/* <Heroh/> */}
     <Hero/>
     <Hero2/>
     <Hero3/>
