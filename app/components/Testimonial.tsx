@@ -116,8 +116,7 @@ const testimonial = () => {
                       <blockquote className="mt-8 flex-1">
                         <p className="text-md font-semibold leading-snug text-black">
                           As an aspiring researcher, I couldn't have asked for
-                          better assistance than what I received from Assignment
-                          Ace. Their attention to detail and expertise in
+                          better assistance than what I received from MindMosaic. Their attention to detail and expertise in
                           research methodologies truly helped elevate my
                           academic pursuits. Highly recommend!
                         </p>
