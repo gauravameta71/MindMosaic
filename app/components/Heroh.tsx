@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Heroh = () => {
   return (
@@ -6,9 +6,9 @@ const Heroh = () => {
       <div className=" py-12 sm:py-16 lg:pt-20 xl:pb-0">
         <div className=" mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-             <h1 className="mt-5 text-3xl font-light leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
+            <h1 className="mt-5 text-3xl font-light leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
               From Stress to Success: Your <br className="sm:hidden" />
-              <span className=" inline-flex justify-center whitespace-nowrap font-bold"> 
+              <span className=" inline-flex justify-center whitespace-nowrap font-bold">
                 {/* <svg
                   className="absolute -bottom-8 hidden w-2/3 text-gray-400 sm:block"
                   viewBox="0 0 490 42"
@@ -24,9 +24,9 @@ const Heroh = () => {
                     fill="currentColor"
                   />
                 </svg> */}
-                Assignment Ally
+                Workforce Ally
               </span>
-             </h1> 
+            </h1>
             <p className="mx-auto mt-12 max-w-md leading-7 text-gray-600">
               Premium quality, unbeatable prices. Elevate your success without
               breaking the bank.
@@ -126,9 +126,7 @@ const Heroh = () => {
         </div>
       </div>
     </div>
-
-
   );
-}
+};
 
-export default Heroh
+export default Heroh;
