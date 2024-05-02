@@ -3,108 +3,122 @@ import React from "react";
 
 const OurGuarantee = () => {
   return (
-    <div className="text-center py-8 text-black bg-gray-200">
-      {/* Paragraph */}
-      <p className="text-sm text-black font-semibold bg-transparent">
-        Revolutionary Approach to Academic Assistance
-      </p>
-
-      {/* Heading */}
-      <h2 className="text-3xl font-bold mt-4 mb-6 bg-transparent">
-        Assurance Beyond Excellence
-      </h2>
-
-      {/* Icon Section */}
-      <div className="flex flex-wrap justify-center gap-6 bg-transparent pt-4 pb-4 m-8">
-        {/* Work Icon */}
-        <div className="flex flex-col items-center bg-transparent ">
-          {/* className="h-10 w-10 text-blue-500 bg-transparent" */}
-          <img
-            src="/assets/work.png"
-            alt="work"
-            className="h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent p-2 m-2">Quality Work</p>
-        </div>
-        
-        <div className="flex flex-col items-center bg-transparent">
-          <img
-            src="/assets/timing.png"
-            alt="work"
-            className="max-w-full h-auto h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent p-2 m-2">
-            Fast Delivery
+    <>
+      {/* // 2 */}
+      <div class="max-w-4xl mx-auto px-2 mt-5 text-black pb-14 ">
+        <div class="text-center">
+          <h2 class="font-semibold text-4xl">Features you'll love</h2>
+          <p class="max-w-md mx-auto mt-2 text-gray-500">
+            Revolutionary Approach to Academic Assistance
           </p>
         </div>
 
-        <div className="flex flex-col items-center bg-transparent">
-          {/* className="h-10 w-10 text-blue-500 bg-transparent" */}
-          <img
-            src="/assets/modify.png"
-            alt="work"
-            className="max-w-full h-auto h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent p-2 m-2">Modification</p>
-        </div>
+        <div class="grid md:grid-cols-2 gap-12 mt-10">
+          <div class="flex gap-4 items-start">
+            <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full">
+              <img
+                src="/delivery1.gif"
+                alt="work"
+                className="max-w-full  h-8 w-8 text-blue-500 bg-transparent"
+              />
+            </span>
+            <div>
+              <h3 class="font-semibold text-xl">Fast Delivery</h3>
+              <p class="mt-1 text-gray-500">
+                {" "}
+                Swift delivery, exceptional service.
+              </p>
+            </div>
+          </div>
 
-        <div className="flex flex-col items-center bg-transparent">
-          {/* className="h-10 w-10 text-blue-500 bg-transparent" */}
-          <img
-            src="/assets/assistance.png"
-            alt="work"
-            className="max-w-full h-auto h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent p-2 m-2">24/7 Support</p>
-        </div>
+          <div class="flex gap-4 items-start ">
+            <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full">
+              <img
+                src="/support.gif"
+                alt="work"
+                className="max-w-full h-8 w-10 text-blue-500 bg-transparent"
+              />
+            </span>
+            <div>
+              <h3 class="font-semibold text-xl">24/7 Support</h3>
+              <p class="mt-1 text-gray-500">
+                {" "}
+                Round-the-clock support: Your needs, our commitment.
+              </p>
+            </div>
+          </div>
 
-        <div className="flex flex-col items-center bg-transparent">
-          {/* className="h-10 w-10 text-blue-500 bg-transparent" */}
-          <img
-            src="/assets/plagiarism.png"
-            alt="work"
-            className="max-w-full h-auto h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent p-2 m-2">
-            Plagiarism free
-          </p>
-        </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full">
+              <img
+                src="/plag.gif"
+                alt="work"
+                className="max-w-full h-8 w-12 text-blue-500 bg-transparent"
+              />
+            </span>
+            <div>
+              <h3 class="font-semibold text-xl">Plagiarism free</h3>
+              <p class="mt-1 text-gray-500">
+                {" "}
+                Originality is our pledge, plagiarism-free content our
+                guarantee.
+              </p>
+            </div>
+          </div>
 
-        <div className="flex flex-col items-center bg-transparent">
-          {/* className="h-10 w-10 text-blue-500 bg-transparent" */}
-          <img
-            src="/assets/service.png"
-            alt="work"
-            className="max-w-full h-auto h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent p-2 m-2">
-            Assistance
-          </p>
-        </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full">
+              <img
+                src="/privacy.gif"
+                alt="work"
+                className="max-w-full h-8 w-8 text-blue-500 bg-transparent"
+              />
+            </span>
+            <div>
+              <h3 class="font-semibold text-xl">Privacy</h3>
+              <p class="mt-1 text-gray-500">
+                {" "}
+                Privacy is not an option, it's a necessity.
+              </p>
+            </div>
+          </div>
 
-        <div className="flex flex-col items-center bg-transparent">
-          {/* className="h-10 w-10 text-blue-500 bg-transparent" */}
-          <img
-            src="/assets/writer.png"
-            alt="work"
-            className="max-w-full h-auto h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent p-2 m-2">
-            Expert
-          </p>
-        </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full">
+              <img
+                src="/quality.gif"
+                alt="work"
+                className="h-8 w-8 text-blue-500 bg-transparent"
+              />
+            </span>
+            <div>
+              <h3 class="font-semibold text-xl">Quality Work</h3>
+              <p class="mt-1 text-gray-500">
+                {" "}
+                Excellence in service, quality in work.
+              </p>
+            </div>
+          </div>
 
-        <div className="flex flex-col items-center bg-transparent">
-          {/* className="h-10 w-10 text-blue-500 bg-transparent" */}
-          <img
-            src="/assets/privacy.png"
-            alt="work"
-            className="max-w-full h-auto h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent p-2 m-2">Privacy</p>
+          <div class="flex gap-4 items-start">
+            <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full">
+              <img
+                src="/modify.gif"
+                alt="work"
+                className="max-w-full  h-8 w-10 text-blue-500 bg-transparent"
+              />
+            </span>
+            <div>
+              <h3 class="font-semibold text-xl">Modification</h3>
+              <p class="mt-1 text-gray-500">
+                {" "}
+                Efficient outsourcing mastery, precision perfected
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

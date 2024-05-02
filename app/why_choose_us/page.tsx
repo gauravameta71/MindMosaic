@@ -7,12 +7,12 @@ const WhoWeAre = () => {
       <div className="py-8">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-base text-orange-600 font-semibold tracking-wide font-bolduppercase">
+            {/* <h2 className="text-base text-orange-600 font-semibold tracking-wide font-bolduppercase">
               Why Choose Us
             </h2>
             <p className="mt-2 leading-8  lg:text-4xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
               Empowering Success, Inspiring Excellence
-            </p>
+            </p> */}
           </div>
 
           <div className="mt-10">

@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/contact/page.jsx", "../middleware.ts", "app/register/page.jsx", "app/components/Header.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/contact/page.jsx", "../middleware.ts", "app/log-in/page.jsx", "app/components/Header.tsx", "app/components/Reviews.jsx", "app/components/Hero4.tsx", "app/sign-up/page.jsx"],
   "exclude": ["node_modules"]
 }

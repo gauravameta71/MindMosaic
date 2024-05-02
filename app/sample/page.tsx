@@ -4,10 +4,10 @@ import React from "react";
 
 const Card = () => (
   <>
-    <h1 className="text-5xl lg:text-3xl xl:text-xl 2xl:text-2xl font-bold text-center text-black pt-6 pb-6 bg-white ">
+    <h1 className="text-3xl lg:text-3xl xl:text-4xl  font-bold text-center text-black pt-6 pb-6 bg-white ">
       Samples
     </h1>
-    <div className="flex flex-wrap justify-center gap-4 pb-12">
+    <div className="flex flex-wrap justify-center gap-8 pb-12">
       {/* card 1 */}
       <div className="max-w-xs mx-auto p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
         <div className="bg-white shadow-md rounded-md overflow-hidden">

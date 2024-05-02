@@ -7,9 +7,6 @@ import Hero4 from "./components/Hero4";
 import Faq from "./components/Faq";
 import Heroh from "./components/Heroh";
 import Testimonial from "./components/Testimonial";
-import Rating from "./components/Rating";
-import HeroPage from "./components/HeroPage";
-
 
 
 export default function Home() {
@@ -22,7 +19,7 @@ export default function Home() {
     <Hero3/>
     <Hero4/>
     <Testimonial/>
-    <Rating/>
+    {/* <Rating/> */}
     <Faq/>
    </h1>
   );

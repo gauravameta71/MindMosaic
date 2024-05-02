@@ -60,7 +60,7 @@ const Hero = () => {
         />
         <div className="text-center sm:text-left sm:w-1/2 sm:pl-8">
           <h1 className="text-2xl">About us</h1>
-          <h1 className="text-4xl font-bold mb-4">Assignment Help UK</h1>
+          <h1 className="text-4xl font-bold mb-4">Content Writing Assistance</h1>
           <p
             className="text-sm text-gray-700 mb-8 leading-loose text-justify"
             id="line-equalizer-container"

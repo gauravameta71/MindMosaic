@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-const testimonial = () => {
+const reviews = () => {
   return (
     <>
       <section className="py-4 sm:py-16 lg:py-16">
@@ -8,7 +8,7 @@ const testimonial = () => {
           <div className="flex flex-col items-center">
             <div className="text-center">
               <h2 className=" text-2xl font-bold text-black sm:text-4xl xl:text-5xl">
-                Have a look at what our clients say
+                Read More Reviews
               </h2>
               <hr className="h-2 bg-indigo-600 w-52 mx-auto mt-4" />
             </div>
@@ -165,23 +165,15 @@ const testimonial = () => {
                         - Computer Sci. Student
                       </p>
                     </div>
-                    <p className=" text-xs text-black">Date : 8 March 2024</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center">
-          <a href="/reviews" title="">
-            <button className="mt-12 bg-blue-500 hover:bg-blue-400 text-white font-semibold py-2 px-4 border border-gray-400 rounded-lg shadow">
-              Read More Reviews
-            </button>
-          </a>
-        </div>
       </section>
     </>
   );
-}
+};
 
-export default testimonial;
+export default reviews;

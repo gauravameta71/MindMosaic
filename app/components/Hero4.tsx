@@ -1,74 +1,63 @@
-import React from "react";
 
-const OurGuarantee = () => {
+
+import React from 'react'
+
+const Hero4 = () => {
   return (
-    <div
-      className="text-center py-8 text-black bg-cover "
-      style={{
-        backgroundImage: `url('/assets/bg1.jpg') `, // Adjust the path based on your project structure
-      }}
-    >
-      {/* Paragraph */}
-      <p className="text-sm text-black font-bold bg-transparent">
-        How Our Quality Assignment Writing Services in the UK Work?
-      </p>
-
-      {/* Heading */}
-      <h2 className="text-3xl font-bold mt-4 mb-6 bg-transparent">
-        Our Procedure
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 text-black">
+      <h2 class="font-headline text-2xl font-semibold sm:text-4xl text-center">
+        How We Work? - Our Procedure
       </h2>
 
-      {/* Icon Section */}
-      <div className="flex flex-col lg:flex-row justify-center bg-transparent pt-4 pb-4 m-8">
-        {/* Work Icon */}
-        <div className="flex flex-col items-center bg-transparent mb-4 lg:mb-0">
-          <img
-            src="/assets/order.png"
-            alt="work"
-            className="h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent font-bold">
-            Step 1: Place Your Order
-          </p>
-          <p className="text-gray-700 font-semibold bg-transparent text-sm text-center">
+      <div class="grid sm:grid-cols-3 gap-16 sm:gap-8 mt-16 sm:mt-24">
+        <div class="text-center">
+          <div class="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2">
+            <div class="z-10 relative w-full h-full bg-white rounded-full border border-gray-300 shadow flex items-center justify-center">
+              <img src="/order.gif" alt="" className="h-14 w-14" />
+            </div>
+            <div class="absolute inset-0 -translate-x-2 -translate-y-2 bg-blue-500 rounded-full"></div>
+          </div>
+          <h3 class="font-headline text-xl font-semibold sm:text-2xl mt-6 sm:mt-10">
+            1. Place Your Order
+          </h3>
+          <p class="leading-relaxed mt-4">
             Submit your assignment details and requirements through our
             user-friendly order form.
           </p>
         </div>
-
-        <div className="flex flex-col items-center bg-transparent mb-4 lg:mb-0">
-          <img
-            src="/assets/encrypted.png"
-            alt="work"
-            className="max-w-full h-auto h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent font-bold">
-            Step 2: Expert Assignment Developers
-          </p>
-          <p className="text-gray-700 font-semibold bg-transparent text-sm text-center">
+        <div class="text-center">
+          <div class="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2">
+            <div class="z-10 relative w-full h-full bg-white rounded-full border border-gray-300 shadow flex items-center justify-center">
+              <img src="/expertw.gif" alt="" className="h-14 w-14" />
+            </div>
+            <div class="absolute inset-0 -translate-x-2 -translate-y-2 bg-blue-500 rounded-full"></div>
+          </div>
+          <h3 class="font-headline text-xl font-semibold sm:text-2xl mt-6 sm:mt-10">
+            2. Expert Writers
+          </h3>
+          <p class="leading-relaxed mt-4">
             Our team of experienced writers will be assigned to work on your
-            assignment, ensuring expertise in the subject.
+            assignment, ensuring expertise in the subject..
           </p>
         </div>
-
-        <div className="flex flex-col items-center bg-transparent">
-          <img
-            src="/assets/document.png"
-            alt="work"
-            className="max-w-full h-auto h-10 w-10 text-blue-500 bg-transparent"
-          />
-          <p className="text-sm text-black mt-1 bg-transparent font-bold">
-            Step 3: Timely Delivery
-          </p>
-          <p className="text-gray-700 font-semibold bg-transparent text-sm text-center">
+        <div class="text-center">
+          <div class="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2">
+            <div class="z-10 relative w-full h-full bg-white rounded-full border border-gray-300 shadow flex items-center justify-center">
+              <img src="/time.gif" alt="" className="h-16 w-16 rounded-full" />
+            </div>
+            <div class="absolute inset-0 -translate-x-2 -translate-y-2 bg-blue-500 rounded-full"></div>
+          </div>
+          <h3 class="font-headline text-xl sm:text-2xl font-semibold mt-6 sm:mt-10">
+            3. Timely Delivery
+          </h3>
+          <p class="leading-relaxed mt-4">
             Receive your well-crafted assignment within the specified timeframe,
             meeting all quality standards.
           </p>
         </div>
       </div>
-      
     </div>
   );
-};
+}
 
-export default OurGuarantee;
+export default Hero4

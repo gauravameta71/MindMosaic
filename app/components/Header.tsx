@@ -1,10 +1,13 @@
 "use client";
 import React, { useState,useRef,useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [isClick, setisClick] = useState(false);
    const navRef = useRef<HTMLDivElement>(null);
+   const [isAuthenticated, setIsAuthenticated] = useState(false);
+   const router = useRouter();
 
 useEffect(() => {
   const handleClickOutside = (event: MouseEvent) => {
@@ -12,6 +15,7 @@ useEffect(() => {
       setisClick(false);
     }
   };
+   
 
   // Attach the event listener
   document.addEventListener("mousedown", handleClickOutside);
@@ -22,9 +26,24 @@ useEffect(() => {
   };
 }, [navRef]);
 
+   useEffect(() => {
+     // Check if there are any users stored in localStorage
+     const users = JSON.parse(localStorage.getItem("users") || "[]");
+     setIsAuthenticated(users.length > 0);
+   }, []);
+
+    const handleLogout = () => {
+      // Clear user data from localStorage
+      localStorage.removeItem("users");
+      setIsAuthenticated(false);
+      router.push("/log-in"); // Redirect to login page
+    };
+
   const toggleNavbar = (): void => {
     setisClick(!isClick);
   };
+
+ 
 
   return (
     <>
@@ -46,7 +65,7 @@ useEffect(() => {
                 </Link>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div className="hidden md:block ">
               <div className="ml-4 flex items-center space-x-4">
                 <a
                   href="/"
@@ -55,23 +74,19 @@ useEffect(() => {
                   Home
                 </a>
 
-                <div className="dropdown ">
-                  <button className="dropbtn ">Company</button>
-                  <div className="dropdown-content">
-                    <a href="/who_we_are">Who we are</a>
-                    <a href="/why_choose_us">Why Choose Us</a>
-                  </div>
-                </div>
-                <div className="dropdown">
-                  <button className="dropbtn">Services</button>
-                  <div className="dropdown-content">
-                    <a href="/assignment_page">Assignment Writing</a>
-                    <a href="/assignment_page1">Dissertation Writing</a>
-                    <a href="/assignment_page2">Technical Assignment</a>
-                    <a href="/assignment_page3">Essay Writing</a>
-                    <a href="/assignment_page4">Research Paper Writing</a>
-                  </div>
-                </div>
+                <a
+                  href="/company"
+                  className="text-black hover:text-gray-500 font-semibold rounded-lg p-2"
+                >
+                  Company
+                </a>
+
+                <a
+                  href="/services"
+                  className="text-black hover:text-gray-500 font-semibold rounded-lg p-2"
+                >
+                  Services
+                </a>
                 <a
                   href="/sample"
                   className="text-black hover:text-gray-500 font-semibold rounded-lg p-2"
@@ -91,11 +106,29 @@ useEffect(() => {
                 >
                   Contact
                 </a>
-                <a href="/signin">
-                  <button className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md">
+                {/* <a href="/log-in */}
+                {/* "> */}
+                {/* <button className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md">
                     LogIn
-                  </button>
-                </a>
+                  </button> */}
+                {/* </a> */}
+                <div className="ml-4 flex items-center space-x-4">
+                  {/* ... */}
+                  {isAuthenticated ? (
+                    <button
+                      className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md"
+                      onClick={handleLogout}
+                    >
+                      Logout
+                    </button>
+                  ) : (
+                    <a href="/log-in">
+                      <button className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md">
+                        Login
+                      </button>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
             <div className="md:hidden flex items-center">
@@ -148,26 +181,12 @@ useEffect(() => {
                 >
                   Home
                 </a>
-                {/*  */}
-                <div className="dropdown1">
-                  <button className="dropbtn1">Company</button>
-                  <div className="dropdown-content1">
-                    <a href="/who_we_are">Who we are</a>
-                    <a href="/why_choose_us">Why Choose Us</a>
-                  </div>
-                </div>
-                <div className="dropdown1">
-                  <button className="dropbtn1">Services</button>
-                  <div className="dropdown-content1 ">
-                    <a href="/assignment_page">Assignment Writing</a>
-                    <a href="/assignment_page1">Dissertation Writing</a>
-                    <a href="/assignment_page2">Technical Assignment</a>
-                    <a href="/assignment_page3">Essay Writing</a>
-                    <a href="/assignment_page4">Research Paper Writing</a>
-                    {/* <a href="/assignment_page5">Home Writing</a> */}
-                  </div>
-                </div>
-                {/*  */}
+                <a
+                  href="/company"
+                  className="text-black hover:text-gray-500 font-semibold rounded-lg p-2"
+                >
+                  Company
+                </a>
 
                 <a
                   href="/sample"
@@ -189,11 +208,23 @@ useEffect(() => {
                 >
                   Contact Us
                 </a>
-                <a href="/signin">
-                  <button className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md">
-                    LogIn
-                  </button>
-                </a>
+                <div className="ml-4 flex items-center space-x-4">
+                  {/* ... */}
+                  {isAuthenticated ? (
+                    <button
+                      className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md"
+                      onClick={handleLogout}
+                    >
+                      Logout
+                    </button>
+                  ) : (
+                    <a href="/log-in">
+                      <button className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md">
+                        Login
+                      </button>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
