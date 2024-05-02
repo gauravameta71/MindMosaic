@@ -1,6 +1,6 @@
 import { iron } from "@hapi/iron";
 
-export default async function handler(req, res) {
+export default async function handler(req, res) { 
   if (req.method === "POST") {
     const { username, password } = req.body;
 
