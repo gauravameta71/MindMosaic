@@ -167,7 +167,7 @@ const page = () => {
                       team of over 200 professionals, proudly emerges as a
                       sister concern within the esteemed Creative and Innovative
                       Service Provider company. Established under the visionary
-                      leadership of Mahipal Singh Rathore in 2018, our
+                      leadership of Gaurav Ameta & Nikhil Ameta in 2023, our
                       headquarters are strategically located in the United
                       Kingdom. At MindMosaic, our core mission revolves around
                       delivering exceptional assignment writing services,
