@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import { signIn } from 'next-auth/react';
 import { useRouter } from "next/navigation";
 
 const page = () => {
@@ -57,12 +58,7 @@ const page = () => {
         <span className="text-gray-200 flex justify-center">or</span>
 
         <div className=" sm:mx-auto sm:w-full sm:max-w-sm">
-          <form
-            className="space-y-6"
-            action="#"
-            method="POST"
-            onSubmit={handleSubmit}
-          >
+        
             <div>
               <label
                 htmlFor="email"
@@ -79,7 +75,7 @@ const page = () => {
                   placeholder="Enter your Email"
                   required
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  value={email}
+                  // value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
@@ -119,14 +115,21 @@ const page = () => {
 
             <div>
               <button
-                type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                // onClick={handleSignIn}
+                onClick={() => signIn('credentials', {email, password, redirect: true, callbackUrl: '/'})}
+                disabled={!email || !password}
+                className="disabled:opacity-40 flex w-full justify-center rounded-md bg-indigo-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
-                Log In
+                Sign in
               </button>
             </div>
-          </form>
+          
+            <p className="mt-10 text-center text-sm text-gray-400">
+            Not a member?{' '}
+            <button onClick={() => router.push('signup')} className="font-semibold leading-6 text-indigo-400 hover:text-indigo-300">
+              Sign Up
+            </button>
+          </p>
+          {/* </form> */}
 
           {/* <p className="mt-10 text-center text-sm text-gray-500">
           Don't have an account?{" "}
