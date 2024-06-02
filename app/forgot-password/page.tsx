@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { auth } from '@/firease';
+import { auth } from '@/firebase';
 import { sendPasswordResetEmail } from "firebase/auth";
 
 
