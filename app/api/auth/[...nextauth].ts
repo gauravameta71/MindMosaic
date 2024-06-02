@@ -25,7 +25,11 @@ export const authOptions = {
           }
           throw new Error('Authentication failed');
         } catch (error) {
-          throw new Error(`Authentication failed: ${error.message}`);
+          if (error instanceof Error) {
+            throw new Error(`Authentication failed: ${error.message}`);
+          } else {
+            throw new Error('Authentication failed: An unknown error occurred');
+          }
         }
       }
     })
