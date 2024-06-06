@@ -1,5 +1,4 @@
 
-
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
@@ -42,18 +41,18 @@ const Header = () => {
       };
     }, [disableBodyScroll]);
 
-  useEffect(() => {
-    // Check if there are any users stored in localStorage
-    const users = JSON.parse(localStorage.getItem("users") || "[]");
-    setIsAuthenticated(users.length > 0);
-  }, []);
+  // useEffect(() => {
+  //   // Check if there are any users stored in localStorage
+  //   const users = JSON.parse(localStorage.getItem("users") || "[]");
+  //   setIsAuthenticated(users.length > 0);
+  // }, []);
 
-  const handleLogout = () => {
-    // Clear user data from localStorage
-    localStorage.removeItem("users");
-    setIsAuthenticated(false);
-    router.push("/log-in"); // Redirect to login page
-  };
+  // const handleLogout = () => {
+  //   // Clear user data from localStorage
+  //   localStorage.removeItem("users");
+  //   setIsAuthenticated(false);
+  //   router.push("/log-in"); // Redirect to login page
+  // };
 
   const toggleNavbar = (): void => {
     setisClick(!isClick);
@@ -136,7 +135,7 @@ const Header = () => {
                   {isAuthenticated ? (
                     <button
                       className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md"
-                      onClick={handleLogout}
+                      // onClick={handleLogout}
                     >
                       Logout
                     </button>
@@ -230,7 +229,7 @@ const Header = () => {
           {isAuthenticated ? (
             <button
               className="text-blue-600 bg-white hover:bg-blue-100 border-2 border-blue-500 font-semibold rounded-lg pl-2 pr-2 m-2 p-1.5 sm:text-xs md:text-sm lg:text-md"
-              onClick={handleLogout}
+              // onClick={handleLogout}
             >
               Logout
             </button>

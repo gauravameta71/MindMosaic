@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={inter.className}>
 
       <SpeedInsights />
-      <Providers>
+      {/* <Providers> */}
         
         {/* <SessionProvider> */}
         <Header />
@@ -40,7 +40,7 @@ export default function RootLayout({
         <Footer />
         {/* // </SessionProvider> */}
        
-        </Providers>
+        {/* </Providers> */}
         <Analytics />
       </body>
     </html>
