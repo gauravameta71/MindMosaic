@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import React, { useState } from "react";
 // import { useRouter } from "next/navigation";
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '@/firebase';
+// import { createUserWithEmailAndPassword } from 'firebase/auth';
+// import { auth } from '@/firebase';/
 
 const page = () => {
   // const [username, setUsername] = useState("");
